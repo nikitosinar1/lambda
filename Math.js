@@ -27,8 +27,8 @@ const IsLessThenOrEqual = a => b => IsZero(Minus(a)(b))
 const IsLessThen = a => b => IsLessThenOrEqual(a)(Pred(b))
 const IsGreatThenOrEqual = a => b => IsZero(Minus(b)(a))
 const IsGreatThen = a => b => IsGreatThenOrEqual(Pred(a))(b)
-const Max = a => b => Boolean.If (IsLessThen(a)(b))(b)(a)
-const Min = a => b => Boolean.If (IsLessThen(a)(b))(a)(b)
+const Max = a => b => Boolean.If(IsLessThen(a)(b))(b)(a)
+const Min = a => b => Boolean.If(IsLessThen(a)(b))(a)(b)
 
 // Math: minus pt.2
 

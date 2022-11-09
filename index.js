@@ -66,7 +66,7 @@ console.log('is array length < 5 and 5 < 33:', toJsBoolean(
 console.log('Examples: Sequence (Advanced)')
 
 const primes = Z(_primes => seq =>
-    Pair
+    Sequence.Append
         (Sequence.Head(seq))
         (() => _primes(
             Sequence.Filter
