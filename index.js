@@ -3,7 +3,6 @@ const {True, False, And, Not} = require("./Boolean")
 const {Append, Nil, Head, Tail, Map, Foldr, IsNil, Length} = require("./List")
 const Sequence = require("./Sequence");
 const {Z} = require("./Utils");
-const {Pair} = require("./Pair");
 
 const toJsNumber = eq => eq(x => x + 1)(0)
 const toJsBoolean = eq => eq(true)(false)
